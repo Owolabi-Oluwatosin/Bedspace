@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHostel</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link href="font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="all-styles.css">
+</head>
+<body>
+    <nav class="navbar-fixed flex-container">
+      <div class="list-in-navbar">
+        <ul>
+          <li><a href="sign-in.html">LOGIN</a></li>
+          <li id="verticle-line"></li>
+          <li><a href="sign-up.html" class="sign-up">SIGN UP</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed" style="background-color:#ffffff !important; margin-top: 1.8rem;">
+      <a class="navbar-brand" href="index.html"><img src="image/bedspace_trans.png" alt="Company Logo" style="padding:0 0 0.6rem; margin:-2rem 0 -2rem 0.1rem; width: 185px; height: 95px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="padding-right: 1.6rem;">
+        <ul class="navbar-nav">
+          <select name="rent" class="custom-select-invirse">
+            <option value="">To Rent</option>
+            <option value="flats">Flats</option>
+            <option value="Self Contain">Self Contain</option>
+            <option value="Rooms">Rooms</option>
+            <option value="Boys Quarters">Boys Quarters</option>
+          </select>
+          <li id="nav-verticle-line"></li>
+          <li class="nav-item news-item" style="padding:0 2rem 0 2rem; color: #a3a4a4 !important; font-family: roboto;">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listing-category.html"><button type="button" class="btn btn-primary btn-block btn-sm" style="background-color: #5e80ab; border: #5e80ab; color: #ffffff !important;">List a Property</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="top-header-body">
+      <h1 class="top-header-body-h1">Search for accommodation</h1>
+      <div class="container-fluid">
+        <div class="row search-form" style="margin-left: 27px !important; margin-right: 27px !important;">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter a School, State, School Area or Town" aria-describedby="emailHelp">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <form action="">
+              <div class="row">
+                <div class="col-md-3 col-gap">
+                    <select name="pets" id="search-cateria" style="width:100%; height: 36px; color:#ffffff; cursor: pointer; font-size: inherit; font-family: roboto; background-color: #5e80ab; text-align: left; border: 1px solid #5e80ab; border-radius: .25rem;">
+                      <option value="Category">Category</option>
+                      <option value="Flats">Flats</option>
+                      <option value="Self-Contain">Self Contain</option>
+                      <option value="Rooms">Rooms</option>
+                      <option value="Boys-Quarters">Boys Quarters</option>
+                    </select>
+                </div>
+                <div class="col-md-2 col-gap">
+                  <select name="pets" id="search-cateria" style="width:100%; height: 36px; color:#ffffff; cursor: pointer; font-size: inherit; font-family: roboto; background-color: #5e80ab; text-align: left; border: 1px solid #5e80ab; border-radius: .25rem;">
+                    <option value="">Bedrooms</option>
+                    <option value="1+ Bedroom">1+ Bedroom</option>
+                    <option value="2+ Bedrooms">2+ Bedrooms</option>
+                    <option value="3+ Bedrooms">3+ Bedrooms</option>
+                    <option value="4+ Bedrooms">4+ Bedrooms</option>
+                    <option value="5+ Bedrooms">5+ Bedrooms</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <select name="pets" id="search-cateria" class="custom-select-invirse" style="width:100%; height: 36px; color:#ffffff; cursor: pointer; font-size: inherit; font-family: roboto; background-color: #5e80ab; text-align: left; border: 1px solid #5e80ab; border-radius: .25rem;">
+                    <option value="">Bedrooms</option>
+                    <option value="1+ Bathroom">1+ Bathroom</option>
+                    <option value="2+ Bathrooms">2+ Bathrooms</option>
+                    <option value="3+ Bathrooms">3+ Bathrooms</option>
+                    <option value="4+ Bathrooms">4+ Bathrooms</option>
+                    <option value="5+ Bathrooms">5+ Bathrooms</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <form>
+                    <div class="form-group ctx margin-for-button">
+                      <input type="email" class="form-control" style="color:#ffffff" id="exampleInputEmail1" placeholder="Max. Price" aria-describedby="emailHelp">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-danger btn-block margin-for-button1">Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>        
+    </section>
+    <section id="top-body">
+      <div class="top-body-link">
+        <a href="estate-agent.html"><p>View All Lodge Agents <i class="fa fa-arrow-right" aria-hidden="true"></i></p></a>
+      </div>
+      <div class="trusted-party">
+        <div class="trusted-party-img">
+          <a href="estate-agent-property.html"><img src="image/deluxe.jpg" alt="Deluxe Residences trust us"></a>
+          <a href="estate-agent-property.html"><img src="image/orangedove.jpg" alt="Orangedove properties Ltd trust us"></a>
+          <a href="estate-agent-property.html"><img src="image/properties.jpg" alt="Highstreet Properties trust us"></a>
+          <a href="estate-agent-property.html"><img src="image/Solid-walls.jpg" alt="Solid walls Properties trust us"></a>
+          <a href="estate-agent-property.html"><img src="image/tojek.jpg" alt="Tojek properties trust us"></a>
+          <a href="estate-agent-property.html"><img src="image/orangedove.jpg" alt="Orangedove properties Ltd trust us"></a>
+          <a href="estate-agent-property.html"><img src="image/properties.jpg" alt="Highstreet Properties trust us"></a>
+        </div>
+      </div>
+    </section>
+    <section id="middle-body">
+      <div class="top-body-right">
+        <a href="property.html"><p>View All New Lodge <i class="fa fa-arrow-right" aria-hidden="true"></i></p></a>
+      </div>
+      <div class="top-body-left">
+        <h3>Properties</h3>
+      </div>
+      <div class="for-slick-slider">
+        <div class="items">
+          <div class="item-card">
+            <div class="card-img">
+              <a href="property-desc.html"><img src="image/house-download-4.jpg" alt="..."></a>
+            </div>
+            <div class="card-img-icon">
+              <span>1/6</span>
+            </div>
+            <div class="card-text">
+              <a href="property-desc.html"><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+              <h4 class="item-address">Chevron Drive, Lekki</h4>
+              <h5 class="item-price">From N65,000,000</h5>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-card">
+            <div class="card-img">
+              <a href="property-desc.html"><img src="image/house-download-5.jpg" alt="..."></a>
+            </div>
+            <div class="card-img-icon">
+              <span>1/6</span>
+            </div>
+            <div class="card-text">
+              <a href="property-desc.html"><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+              <h4 class="item-address">Chevron Drive, Lekki</h4>
+              <h5 class="item-price">From N65,000,000</h5>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-card">
+            <div class="card-img">
+              <a href="property-desc.html"><img src="image/house-download-2.jpg" alt="..."></a>
+            </div>
+            <div class="card-img-icon">
+              <span>1/6</span>
+            </div>
+            <div class="card-text">
+              <a href="property-desc.html"><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+              <h4 class="item-address">Chevron Drive, Lekki</h4>
+              <h5 class="item-price">From N65,000,000</h5>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-card">
+            <div class="card-img">
+              <a href="property-desc.html"><img src="image/house-download-3.jpg" alt="..."></a>
+            </div>
+            <div class="card-img-icon">
+              <span>1/6</span>
+            </div>
+            <div class="card-text">
+              <a href="property-desc.html"><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+              <h4 class="item-address">Chevron Drive, Lekki</h4>
+              <h5 class="item-price">From N65,000,000</h5>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-card">
+            <div class="card-img">
+              <a href="property-desc.html"><img src="image/house-download-5.jpg" alt="..."></a>
+            </div>
+            <div class="card-img-icon">
+              <span>1/6</span>
+            </div>
+            <div class="card-text">
+              <a href="property-desc.html"><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+              <h4 class="item-address">Chevron Drive, Lekki</h4>
+              <h5 class="item-price">From N65,000,000</h5>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-card">
+            <div class="card-img">
+              <a href="property-desc.html"><img src="image/house-download-4.jpg" alt="..."></a>
+            </div>
+            <div class="card-img-icon">
+              <span>1/6</span>
+            </div>
+            <div class="card-text">
+              <a href="property-desc.html"><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+              <h4 class="item-address">Chevron Drive, Lekki</h4>
+              <h5 class="item-price">From N65,000,000</h5>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-card">
+            <div class="card-img">
+              <a href="property-desc.html"><img src="image/house-download-2.jpg" alt="..."></a>
+            </div>
+            <div class="card-img-icon">
+              <span>1/6</span>
+            </div>
+            <div class="card-text">
+              <a href="property-desc.html"><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+              <h4 class="item-address">Chevron Drive, Lekki</h4>
+              <h5 class="item-price">From N65,000,000</h5>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-card">
+            <div class="card-img">
+              <a href="property-desc.html"><img src="image/house-download-3.jpg" alt="..."></a>
+            </div>
+            <div class="card-img-icon">
+              <span>1/6</span>
+            </div>
+            <div class="card-text">
+              <a href="property-desc.html"><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+              <h4 class="item-address">Chevron Drive, Lekki</h4>
+              <h5 class="item-price">From N65,000,000</h5>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-card">
+            <div class="card-img">
+              <a href="property-desc.html"><img src="image/house-download-4.jpg" alt="..."></a>
+            </div>
+            <div class="card-img-icon">
+              <span>1/6</span>
+            </div>
+            <div class="card-text">
+              <a href="property-desc.html"><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+              <h4 class="item-address">Chevron Drive, Lekki</h4>
+              <h5 class="item-price">From N65,000,000</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-prev">
+        <span><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></span>
+      </div>
+      <div class="arrow-next">
+        <span><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></span>
+      </div>
+    </section>
+    
+    <section id="bottom-body">
+        <h3 class="bottom-body-header1">African Property Portal Partners</h3>
+        <h4 class="bottom-body-header2">Mauritius Real Estate (low tax & residency) | Zimbabwe Real Estate (low price opportunities)</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="customDiv">
+              <div class="home-fontawesome">
+                <i class="fa fa-home fa-4x" aria-hidden="true"></i>
+              </div>
+              <h3>Find a Real Estate Agent</h3>
+              <p>Find your next agent among our many partners.</p>
+              <a href="estate-agent.html" class="btn btn-primary btn-block btn-lg customDiv-button">Find Agent</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="customDiv">
+              <div class="list-fontawesome">
+                <i class="fa fa-list-alt fa-4x" aria-hidden="true"></i>
+              </div>
+              <h3>Weekly Newsletter</h3>
+              <p>Read the latest in property news on the blog.</p>
+              <a href="subscribe.html" target="__blank" type="submit" class="btn btn-primary btn-block btn-lg customDiv-button">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer2">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3 col-img">
+              <div class="img-flex">
+                <a href="index.html"><img src="image/bedspace_trans.png" alt="LOGO"></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+              <h3 class="footer-link-header">Properties</h3>
+              <a href="#">Property for Rent</a>
+              <a href="#">Estate Agents</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+              <h3 class="footer-link-header">Private Property</h3>
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Terms & Privacy</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+              <h3 class="footer-link-header">Services</h3>
+              <a href="#">Advertisement</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />   
+      <div class="row">	
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="lms-head">
+                <div class="footer-text-center">
+                    <p> Head Office <i class="fa fa-phone" aria-hidden="true"></i> +2348170942931</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="lms-area">
+                <div class="footer-text-center">
+                  <p>  16a Fola Jinadu Crescent,, Gbagada Phase 2, Gbagada</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="lms-holding">
+                <div class="footer-text-center">
+                  <p>House Property Nigeria  &copy; 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>	
+    </section>
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	    <a href="#" class="gotopbtn"><i class="fa fa-arrow-up"></i></a>
+    </div>
+    <script type="text/javascript" src="js/jQuery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

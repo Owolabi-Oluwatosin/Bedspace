@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHostel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="myproperties.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#ffffff !important;box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);">
+      <a class="navbar-brand" href="index.html"><img src="image/bedspace_trans.png" alt="Company Logo" style="padding:0 0 0.6rem; margin:-2rem 0 -2rem 0.1rem; width: 185px; height: 95px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="padding-right: 1.6rem;">
+        <ul class="navbar-nav">
+            <select name="rent" style="border: 0; color: #5e80ab;">
+                <option value="">To Rent</option>
+                <option value="flats">Flats</option>
+                <option value="Self Contain">Self Contain</option>
+                <option value="Rooms">Rooms</option>
+                <option value="Boys Quarters">Boys Quarters</option>
+            </select>
+          <li id="nav-verticle-line"></li>
+          <li class="nav-item news-item" style="padding:0 2rem 0 2rem; color: #a3a4a4 !important; font-family: roboto;">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listing-category.html"><button type="button" class="btn btn-primary btn-block btn-sm" style="background-color: #5e80ab; border: #5e80ab; color: #ffffff !important;">List a Property</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-sm" style=" background-color: #ffffff; margin-top: 0.5px; padding:20px 30px 10px 30px; position: relative; z-index: 1;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="listing-header">
+                    <h1>My Properties</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-home" aria-hidden="true"></i> Add Listing</button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-list-alt" aria-hidden="true"></i> Public Details</button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-credit-card" aria-hidden="true"></i> Transaction History</button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-trash" aria-hidden="true"></i> Show Archives</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search" aria-describedby="emailHelp">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" style=" margin-top: 1rem;">
+            <div class="col-md-12">
+                <div class="card text-black mb-3" style="border:1px solid #5e80ab;">
+                    <div class="card-header text-white mb-3" style="background-color: #5e80ab;">
+                        <div class="row">
+                            <div class="col-md-2">
+                                Reference
+                                <i class="fab fa-sort-amount-desc" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-3">
+                                Categories
+                                <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                                <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-2">
+                                Address
+                            </div>
+                            <div class="col-md-1">
+                                Expires
+                            </div>
+                            <div class="col-md-2">
+                                Price
+                            </div>
+                            <div class="col-md-2">
+                                Status
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" id="myproperty-card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="myproperty-p">MY23536</p>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="image/house-download-2.jpg" class="img-thumbnail" style="width: 80px; height: 50px; border: 1px solid #ccc; border-radius: 2px;" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="myproperty-p">Flats & Apartments, Rooms & Boys Quarters for Rent</p> 
+                            </div>
+                            <div class="col-md-2">
+                                <p class="myproperty-p">243 Ibadan, Oyo</p>
+                            </div>
+                            <div class="col-md-1">
+                                <p class="myproperty-p">04/03/2020</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="myproperty-p">N130,000 per year</p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="alert alert-warning" style="width:90px; padding: 2px !important; text-align: center;  font-size: 12px;" role="alert" data-toggle="tooltip" data-placement="top" title="04/03/2020">
+                                    Unpublished
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa fa-cog" aria-hidden="true"></i> Edit</button>
+                                    <button type="button" class="btn btn-success btn-sm"><i class="fa fa-check-square" aria-hidden="true"></i> Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="myproperty-p">MY23536</p>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="image/house-download-2.jpg" class="img-thumbnail" style="width: 80px; height: 50px; border: 1px solid #ccc; border-radius: 2px;" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="myproperty-p">Flats & Apartments, Rooms & Boys Quarters for Rent</p> 
+                            </div>
+                            <div class="col-md-2">
+                                <p class="myproperty-p">243 Ibadan, Oyo</p>
+                            </div>
+                            <div class="col-md-1">
+                                <p class="myproperty-p">04/03/2020</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="myproperty-p">N130,000 per year</p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="alert alert-warning" style="width:90px; padding: 1px !important; text-align: center; font-size: 12px;" role="alert" data-toggle="tooltip" data-placement="top" title="04/03/2020">
+                                    Unpublished
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa fa-cog" aria-hidden="true"></i> Edit</button>
+                                    <button type="button" class="btn btn-success btn-sm"><i class="fa fa-check-square" aria-hidden="true"></i> Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="margin-left: 4rem; font-family: roboto; margin-top: 18rem; color:#ccc; text-align: left;">Showing <span>1 to 2 of 2 entries</span></p>
+    </div>
+    <script src="js/jquery1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

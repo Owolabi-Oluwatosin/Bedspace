@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHostel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="all-styles.css">
+</head>
+<body style="background-color: #ffffff;">
+  <nav class="navbar-fixed flex-container">
+    <div class="list-in-navbar">
+      <ul>
+        <li><a href="sign-in.html">LOGIN</a></li>
+        <li id="verticle-line"></li>
+        <li><a href="sign-up.html" class="sign-up">SIGN UP</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#ffffff !important; margin-top: 1.8rem;">
+    <a class="navbar-brand" href="index.html"><img src="image/bedspace_trans.png" alt="Company Logo" style="padding:0 0 0.6rem; margin:-2rem 0 -2rem 0.1rem; width: 185px; height: 95px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="padding-right: 1.6rem;">
+      <ul class="navbar-nav">
+        <select name="rent" style="border: 0; color: #5e80ab;">
+          <option value="">To Rent</option>
+          <option value="flats">Flats</option>
+          <option value="Self Contain">Self Contain</option>
+          <option value="Rooms">Rooms</option>
+          <option value="Boys Quarters">Boys Quarters</option>
+        </select>
+        <li id="nav-verticle-line"></li>
+        <li class="nav-item news-item" style="padding:0 2rem 0 2rem; color: #a3a4a4 !important; font-family: roboto;">
+          <a class="nav-link" href="news.html">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="listing-category.html"><button type="button" class="btn btn-primary btn-block btn-sm" style="background-color: #5e80ab; border: #5e80ab; color: #ffffff !important;">List a Property</button></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="signup-head-section">
+        <h1 class="property-h1">Sign In</h1>
+    </div>
+    <div class="container-fluid"><!--login body code goes here-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-give-margin">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                  <h6 style="color:#3d6599;"><strong>Click here to sign up for free <i class="fa fa-arrow-right" aria-hidden="true"></i></strong></h6>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                          <input type="email" class="form-control" placeholder="E-Mail" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="password" class="form-control" placeholder="Password" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-danger btn-block" style="margin: 0 auto 1rem;"><i class="fa fa-sign-in"></i> Login</button>
+                                        <p class="forgot-password"><a href="#">Forgot your password?</a></p>
+                                        <button type="submit" class="btn btn-primary btn-block"><i class="fab fa-facebook-square" aria-hidden="true"></i> Sign in with Facebook</button>
+                                    </form>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12 card-margin1">
+                                    <div class="card text-center">
+                                        <div class="card-header">
+                                            <h4 style="text-align: left !important;">Haven't got an account?
+                                        </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="sign-up.html" class="btn btn-danger btn-lg" style="border: 1px solid #3d6599 !important; color: #ffffff; font-family: roboto;">Click here to sign up for free!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 card-margin2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                          <strong><h4>Why create an account?</h4>
+                                        </strong>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item"><strong><i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i> Receive E-mail Alerts</strong> when properties become available</li>
+                                          <li class="list-group-item"><strong><i class="fa fa-flag fa-2x" aria-hidden="true"></i> Save Favourites
+                                        </strong> to view later</li>
+                                          <li class="list-group-item"><strong><i class="fa fa-home fa-2x" aria-hidden="true"></i> Create Your Own Listings
+                                        </strong> for rental or sale</li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--login body end here-->
+    <hr />
+    <section id="footer2">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+              <div class="col-xs-12 col-sm-4 col-md-3 col-img">
+                <div class="img-flex">
+                  <a href="index.html"><img src="image/bedspace_trans.png" alt="LOGO"></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+                <h3 class="footer-link-header">Properties</h3>
+                <a href="#">Property for Rent</a>
+                <a href="#">Estate Agents</a>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+                <h3 class="footer-link-header">Private Property</h3>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Terms & Privacy</a>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+                <h3 class="footer-link-header">Services</h3>
+                <a href="#">Advertisement</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />   
+        <div class="row">	
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="lms-head">
+                  <div class="footer-text-center">
+                      <p> Head Office <i class="fa fa-phone" aria-hidden="true"></i> +2348170942931</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="lms-area">
+                  <div class="footer-text-center">
+                    <p>  16a Fola Jinadu Crescent,, Gbagada Phase 2, Gbagada</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="lms-holding">
+                  <div class="footer-text-center">
+                    <p>House Property Nigeria  &copy; 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>	
+    </section>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <a href="#" class="gotopbtn"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+      
+    <script src="js/jquery1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://font-awesome/5.12.1/js/all.min.js">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

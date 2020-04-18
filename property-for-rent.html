@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHostel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link href="font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="all-styles.css">
+</head>
+<body>
+      <nav class="navbar-fixed flex-container">
+        <div class="list-in-navbar">
+          <ul>
+            <li><a href="sign-in.html">LOGIN</a></li>
+            <li id="verticle-line"></li>
+            <li><a href="sign-up.html" class="sign-up">SIGN UP</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#ffffff !important; margin-top: 1.8rem;">
+        <a class="navbar-brand" href="index.html"><img src="image/bedspace_trans.png" alt="Company Logo" style="padding:0 0 0.6rem; margin:-2rem 0 -2rem 0.1rem; width: 185px; height: 95px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="padding-right: 1.6rem;">
+          <ul class="navbar-nav">
+            <select name="rent" style="border: 0; color: #5e80ab;">
+              <option value="">To Rent</option>
+              <option value="flats">Flats</option>
+              <option value="Self Contain">Self Contain</option>
+              <option value="Rooms">Rooms</option>
+              <option value="Boys Quarters">Boys Quarters</option>
+            </select>
+            <li id="nav-verticle-line"></li>
+            <li class="nav-item news-item" style="padding:0 2rem 0 2rem; color: #a3a4a4 !important; font-family: roboto;">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="listing-category.html"><button type="button" class="btn btn-primary btn-block btn-sm" style="background-color: #5e80ab; border: #5e80ab; color: #ffffff !important;">List a Property</button></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <h1 class="property-h1">Properties in Nigeria University</h1>
+    <div class="fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="listing-count"></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <button type="button" class="btn btn-outline-primary btn-rent-alert">Create Alert <i class="fa fa-bell" aria-hidden="true"></i></button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-md-12">
+              <div class="listing-bar">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="listing-count text-count">
+                      Listings 1 - 20 of 1574
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <div id="dropdown-icon1">
+                    <select name="rent" class="custom-select-invirse estate-agent-dropdown">
+                      <option value="">To Rent</option>
+                      <option value="flats">Flats</option>
+                      <option value="Self Contain">Self Contain</option>
+                      <option value="Rooms">Rooms</option>
+                      <option value="Boys Quarters">Boys Quarters</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="card mb-3" id="property-card-slider">
+                <div class="row no-gutters">
+                  <div class="col-md-4 col-lg-4 col-xl-4">
+                    <div class="estate-property-slider">
+                      <img src="image/house-download-2.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                      <img src="image/house-download-3.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                      <img src="image/house-download-5.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                      <img src="image/house-download-4.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                      <img src="image/house-download-2.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                    </div>
+                    <div id="estate-arrow-prev">
+                      <span><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></span>
+                    </div>
+                    <div id="estate-arrow-next">
+                      <span><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="icon">
+                      <i class="fas fa-camera-retro"></i>
+                      <span>1/6</span>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-lg-8 col-xl-8">
+                    <div class="card-header" style="background-color: #ffffff;">
+                      <div class="row" style="display: flex;">
+                        <div class="col-md-6">
+                          <h5 class="estate-price"><strong>From N35,000,000</strong></h5>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="desc-icon">
+                            <i class="fa fa-bath" aria-hidden="true"> <span>3</span></i>
+                            <i class="fa fa-bed" aria-hidden="true"><span>3</span></i>
+                            <i class="fa fa-car" aria-hidden="true"> <span>2</span></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="row no-gutters">
+                          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 property-body-text">
+                            <a href="property-desc.html"><h5 class="card-title"><strong>3 Bedroom Flat & Apartment</strong></h5></a>
+                            <p class="card-text">EXQUISITE FURNISHED THREE BEDROOM SERVICED FLAT...</p>
+                            <p class="text-muted">
+                              <a href="property-desc.html"><img src="image/Solid-walls.jpg" alt="" width="80" height="60"></a>
+                            </p>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                            <div id="heart">
+                              <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                            <div class="social">
+                              <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i>
+                              <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- <nav aria-label="...">
+                <ul class="pagination  justify-content-center">
+                  <li class="page-item disabled" >
+                    <a class="page-link color-tooltip" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link color-tooltip" href="#">2 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </nav> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white text-left newsletter mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Subscribe to our Weekly Newsletter</h5>
+              <p class="card-text text-white text-left">Get weekly updates on the best deals on Properties & Developments in Nigeria.</p>
+              <button type="button" class="btn btn-danger btn-block">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- <div class="row">
+          <div class="col-md-8" style="margin-right:.2rem;">
+            <button type="button" class="btn btn-outline-primary btn-rent-alert">Create Alert <i class="fa fa-bell" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                  <div class="row"  style="margin:1rem 4rem 1rem 0; height:60px; background-color: #ffffff; box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);">
+                    <div class="col-md-6">
+                        <div class="listing-count text-count" style="float: left; margin-top: 12px;">
+                            Listings 1 - 20 of 1574
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dropdown" id="dropdown-icon1">
+                            <a class="dropdown-toggle property-dropdown" style="background-color:none; text-align: left; text-decoration: none; margin-top:12px; color: black !important; float: right;" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <label>Sort By:</label>  Default
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="property-for-rent.html">Flats</a>
+                              <a class="dropdown-item" href="property-for-rent.html">Self Contain</a>
+                              <a class="dropdown-item" href="property-for-rent.html">Rooms</a>
+                              <a class="dropdown-item" href="property-for-rent.html">Boys Quarters</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card mb-3" style=" margin:0px 4rem 5px 0px !important;" id="property-slider">
+                        <div class="row no-gutters">
+                          <div class="col-md-4 col-lg-4 col-xl-4">
+                            <div class="property-slider1">
+                              <img src="image/house-download-2.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                              <img src="image/house-download-3.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                              <img src="image/house-download-5.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                              <img src="image/house-download-4.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                              <img src="image/house-download-2.jpg" class="card-img" style="border-radius: 0px;" alt="...">
+                            </div>
+                            <div class="icon">
+                              <i class="fas fa-camera-retro"></i>
+                              <span>1/6</span>
+                            </div>
+                            <div class="p-arrow-prev">
+                              <span><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="p-arrow-next">
+                              <span><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-md-8 col-lg-8 col-xl-8">
+                            <div class="card-header" style="background-color: #ffffff;">
+                                Featured
+                            </div>
+                            <div class="card-body">
+                              <div class="row no-gutters">
+                                  <div class="col-md-8 col-lg-8 col-xl-8 property-body-text">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="text-muted"><small>Last updated 3 mins ago</small></p>
+                                  </div>
+                                  <div class="col-md-4 col-lg-4 col-xl-4 text-center">
+                                    <img src="..." class="card-img" alt="...">
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="property-slider">
+                        <div class="items">
+                          <div class="item-card">
+                            <div class="card-img">
+                              <a href=""><img src="image/house-download-4.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-img-icon">
+                              <span>1/6</span>
+                            </div>
+                            <div class="card-text">
+                              <a href=""><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+                              <h4 class="item-address">Chevron Drive, Lekki</h4>
+                              <a href=""><h5 class="item-price">From N65,000,000</h5></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items">
+                          <div class="item-card">
+                            <div class="card-img">
+                              <a href=""><img src="image/house-download-5.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-img-icon">
+                              <span>1/6</span>
+                            </div>
+                            <div class="card-text">
+                              <a href=""><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+                              <h4 class="item-address">Chevron Drive, Lekki</h4>
+                              <a href=""><h5 class="item-price">From N65,000,000</h5></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items">
+                          <div class="item-card">
+                            <div class="card-img">
+                              <a href=""><img src="image/house-download-2.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-img-icon">
+                              <span>1/6</span>
+                            </div>
+                            <div class="card-text">
+                              <a href=""><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+                              <h4 class="item-address">Chevron Drive, Lekki</h4>
+                              <a href=""><h5 class="item-price">From N65,000,000</h5></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items">
+                          <div class="item-card">
+                            <div class="card-img">
+                              <a href=""><img src="image/house-download-3.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-img-icon">
+                              <span>1/6</span>
+                            </div>
+                            <div class="card-text">
+                              <a href=""><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+                              <h4 class="item-address">Chevron Drive, Lekki</h4>
+                              <a href=""><h5 class="item-price">From N65,000,000</h5></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items">
+                          <div class="item-card">
+                            <div class="card-img">
+                              <a href=""><img src="image/house-download-5.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-img-icon">
+                              <span>1/6</span>
+                            </div>
+                            <div class="card-text">
+                              <a href=""><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+                              <h4 class="item-address">Chevron Drive, Lekki</h4>
+                              <a href=""><h5 class="item-price">From N65,000,000</h5></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items">
+                          <div class="item-card">
+                            <div class="card-img">
+                              <a href=""><img src="image/house-download-4.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-img-icon">
+                              <span>1/6</span>
+                            </div>
+                            <div class="card-text">
+                              <a href=""><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+                              <h4 class="item-address">Chevron Drive, Lekki</h4>
+                              <a href=""><h5 class="item-price">From N65,000,000</h5></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items">
+                          <div class="item-card">
+                            <div class="card-img">
+                              <a href=""><img src="image/house-download-2.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-img-icon">
+                              <span>1/6</span>
+                            </div>
+                            <div class="card-text">
+                              <a href=""><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+                              <h4 class="item-address">Chevron Drive, Lekki</h4>
+                              <a href=""><h5 class="item-price">From N65,000,000</h5></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items">
+                          <div class="item-card">
+                            <div class="card-img">
+                              <a href=""><img src="image/house-download-3.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-img-icon">
+                              <span>1/6</span>
+                            </div>
+                            <div class="card-text">
+                              <a href=""><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+                              <h4 class="item-address">Chevron Drive, Lekki</h4>
+                              <a href=""><h5 class="item-price">From N65,000,000</h5></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="items">
+                          <div class="item-card">
+                            <div class="card-img">
+                              <a href=""><img src="image/house-download-4.jpg" alt="..."></a>
+                            </div>
+                            <div class="card-img-icon">
+                              <span>1/6</span>
+                            </div>
+                            <div class="card-text">
+                              <a href=""><h3 class="item-title">Victoria Crest II, III and Victoria Crest IV</h3></a>
+                              <h4 class="item-address">Chevron Drive, Lekki</h4>
+                              <a href=""><h5 class="item-price">From N65,000,000</h5></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white text-left mb-3" style=" background-color: #5e80ab; margin-right: 4rem; box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);">
+                    <div class="card-body">
+                      <h5 class="card-title">Subscribe to our Weekly Newsletter</h5>
+                      <p class="card-text text-white text-left">Get weekly updates on the best deals on Properties & Developments in Nigeria.</p>
+                      <button type="button" class="btn btn-danger btn-block">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    
+    <section id="footer2">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3 col-img">
+              <div class="img-flex">
+                <a href="index.html"><img src="image/bedspace_trans.png" alt="LOGO"></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+              <h3 class="footer-link-header">Properties</h3>
+              <a href="#">Property for Rent</a>
+              <a href="#">Estate Agents</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+              <h3 class="footer-link-header">Private Property</h3>
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Terms & Privacy</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+              <h3 class="footer-link-header">Services</h3>
+              <a href="#">Advertisement</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />   
+      <div class="row">	
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="lms-head">
+                <div class="footer-text-center">
+                    <p> Head Office <i class="fa fa-phone" aria-hidden="true"></i> +2348170942931</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="lms-area">
+                <div class="footer-text-center">
+                  <p>  16a Fola Jinadu Crescent,, Gbagada Phase 2, Gbagada</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="lms-holding">
+                <div class="footer-text-center">
+                  <p>House Property Nigeria  &copy; 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>	
+    </section>
+    <script src="js/jquery1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

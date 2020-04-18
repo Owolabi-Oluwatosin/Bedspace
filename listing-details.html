@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHostel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="listing-details.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#ffffff !important; margin-top: 0; box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);">
+        <a class="navbar-brand" href="index.html"><img src="image/bedspace_trans.png" alt="Company Logo" style="padding:0 0 0.6rem; margin:-2rem 0 -2rem 0.1rem; width: 185px; height: 95px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="padding-right: 1.6rem;">
+          <ul class="navbar-nav">
+            <select name="rent" style="border: 0; color: #5e80ab;">
+              <option value="">To Rent</option>
+              <option value="flats">Flats</option>
+              <option value="Self Contain">Self Contain</option>
+              <option value="Rooms">Rooms</option>
+              <option value="Boys Quarters">Boys Quarters</option>
+            </select>
+            <li id="nav-verticle-line"></li>
+            <li class="nav-item news-item" style="padding:0 2rem 0 2rem; color: #a3a4a4 !important; font-family: roboto;">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="listing-category.html"><button type="button" class="btn btn-primary btn-block btn-sm" style="background-color: #5e80ab; border: #5e80ab; color: #ffffff !important;">List your Property</button></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container-sm" style=" background-color: #ffffff; margin-top: 0.5px; padding:20px 30px 10px 30px; position: relative; z-index: 1;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="listing-header">
+                    <h1>Add a New Listing</h1>
+                    <p style="background-color: #f5f5f5; text-align: left; color: #c9c9c9; border-radius: 5px; padding: 5px;"><a href=""> My Property</a> / Add a New Listing</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin: 0 0 1rem 0">
+                    A listing type and category must be selected before proceeding further
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="text-content" >
+                    <p style="text-align: left; color: #333333;"><strong>Listing Quality: </strong>Good quality listings are shown higher in search results and get more leads. Complete as many fields as possible and add high resolution pictures for a higher ranking. Boost your rank further by promoting the listing with silver or gold priority. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 40%; min-width: 20px; background-color: #5e80ab;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        40%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style=" margin-top: 1rem;">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                  <form action="" method="">
+                    <div class="card text-black mb-3" style="border:1px solid #5e80ab;">
+                      
+                        <div class="card-header repl-card" style="background-color: #5e80ab; color: #ffffff; padding: 5px 20px 5px 5px;" id="headingOne">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" style="color: #ffffff; text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Step 2 - Main Details
+                            </button>
+                            <i class="fa fa-chevron-up" style="float: right; cursor: pointer; font-size: 18px; line-height: 2.5rem;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" aria-hidden="true"></i>
+                          </h2>
+                        </div>
+                  
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body">
+                              <div class="alert alert-info" role="alert">
+                                  You selected Flats & Apartments for Rent.   <button type="button" class="btn btn-outline-secondary" style="background-color: #ffffff;"><i class="fa fa-edit" aria-hidden="true"></i> Change</button>
+                              </div>
+                              <h5 class="card-title">Heading <span style="color: red;">*</span></h5>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <h5 class="card-title">Discription <span style="color: red;">*</span></h5>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <label for="exampleFormControlTextarea1">
+                                        <div class="alert alert-danger" style="background-color: #ffffff; border: none;" role="alert">
+                                            The description requires another (10) characters before the listing can be published
+                                        </div>
+                                    </label>
+                                </div>
+                              <h5 class="card-title">Quick Filters</h5>
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <div class="button-wrapper">
+                                        <div>
+                                            <label>
+                                                <input type="checkbox" name="">
+                                                <span>Furnished</span>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="">
+                                                <span>Serviced</span>
+                                            </label>
+                                            <label>
+                                              <input type="checkbox" name="">
+                                              <span>Self-contained</span>
+                                            </label>
+                                            <label>
+                                              <input type="checkbox" name="">
+                                              <span>Mini</span>
+                                            </label>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-3">
+                                      <label for="inputState">Price per year <span style="color: red;">*</span></label>
+                                      <div class="input-group mb-0">
+                                          <div class="input-group-prepend">
+                                          <div class="input-group-text">N</div>
+                                          </div>
+                                          <input type="text" class="form-control" id="inlineFormInputGroup">
+                                          <div class="input-group-prepend">
+                                          <div class="input-group-text color-tooltip"  data-toggle="tooltip" data-placement="left" title="Price per year required"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                      <label for="inputEmail4">Toilets <span style="color: red;">*</span></label>
+                                      <input type="text" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                      <label for="inputPassword4">Bedrooms <span style="color: red;">*</span></label>
+                                      <input type="text" class="form-control" id="inputPassword4">
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                      <label for="inputEmail4">Bathrooms <span style="color: red;">*</span></label>
+                                      <input type="text" class="form-control" id="inputEmail4">
+                                  </div>
+                              </div>
+                              <h5 class="card-title">Property Title Type</h5>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="button-wrapper">
+                                    <div>
+                                        <label>
+                                          <input type="checkbox" name="">
+                                          <span>Short Term Lease</span>
+                                        </label>
+                                        <label>
+                                          <input type="checkbox" name="">
+                                          <span>Long Term Lease</span>
+                                        </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="col">
+                                  <label for="inputPassword4">Area <span style="color: red;">*</span></label>
+                                  <select class="form-control" style="color: #c9c9c9;">
+                                    <option>- Type and select an option -</option>
+                                  </select>
+                                </div>
+                                <div class="col">
+                                  <label for="inputPassword4">Street Number</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="col">
+                                  <label for="inputPassword4">Street Name<span style="color: red;">*</span></label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="col">
+                                  <label for="inputPassword4">Flat Number</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div id="map" style="height: 250px; border: 1px solid #c9c9c9; border-radius: .25rem; margin-top: 1rem;">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <label for="inputState">Private Note</label>
+                                  <div class="form-group">
+                                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 2rem;">
+                      <div class="col-md-12">
+                          <button type="submit" class="btn btn-danger btn-sm" style="float: left;">Cancel</button>
+                          <button type="submit" class="btn btn-primary btn-sm" style="float: right; background-color: #5e80ab; border:1px solid #5e80ab;border-top-left-radius: 0px; border-bottom-left-radius: 0px;"> Next <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                          <button type="submit" class="btn btn-outline-secondary btn-sm" style="float: right; background-color: #ffffff; border:1px solid #5e80ab; border-top-right-radius: 0px; border-bottom-right-radius: 0px;"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&callback=initMap"></script>
+    <script src="js/jquery1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

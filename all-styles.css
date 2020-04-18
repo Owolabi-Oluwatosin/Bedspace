@@ -1,0 +1,1368 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: roboto;
+    padding: 0;
+    margin:0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+
+/***SLICK SLIDER CSS FOR HOME PAGE IN HERE***/
+.property-slider{
+    margin:0 2rem 0 -1.5rem;
+}
+/* .for-slick-slider{
+    width: 100% !important;
+    border: 1px solid #0011ff;
+} */
+
+#subscribe-message h2{
+    color: #7b96b9;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+#subscribe-message p{
+    color: #7b96b9;
+    text-align: center;
+}
+
+#subscribe-form form{
+    margin: 2rem 37% 0;
+}
+
+#subscribe-form form label{
+    color: #7b96b9;
+}
+
+#subscribe-form form input{
+    width: 100%;
+}
+
+.property-slider .items,
+.for-slick-slider .items{
+    width: 84%;
+    height: 350px;
+    margin: 0 auto;
+    padding: 10px 0px 10px;
+    overflow: hidden;
+
+}
+
+
+
+.style-sub{
+    margin:1rem 0 0 2.8rem;
+}
+
+.property-slider .items .item-card,
+.for-slick-slider .items .item-card{
+    position: relative;
+    height: 330px;
+    width: 84%;
+    margin: 0px 10px 0px 25px;
+    display: inline-block;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+
+.apply-box-shadow{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+    margin: .5rem 0;
+}
+
+.fluid{
+    width: 100%;
+    padding-right: 45px !important;
+    padding-left: 45px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.drop-flex{
+    display: flex;
+    justify-content: right;
+}
+
+.desc-property-price{
+    color: #7b96b9;
+}
+
+.account-head-section{
+    margin-top: 7rem;
+}
+
+/* .select-items #option-b{
+    background-color: #5e80ab;
+    border-radius: .2rem;
+    padding:2px 4px 2px 4px;
+    color: #ffffff;
+} */
+
+.desc-p{
+    color: rgb(24, 24, 24);
+    text-align: left;
+    font-size: 18px;
+}
+
+.touch{
+    padding-top: 1.5rem;
+}
+
+.property-desc-slider img{
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-top: 2rem;
+    width: 100%;
+    height: 480px;
+}
+
+.estate-agent-card{
+    background-color: #ffffff; 
+    color: black; 
+    margin-top: 1rem; 
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.branch{
+    padding:.5rem 0 0 1rem;
+}
+
+.listing-count{
+    margin-top: 18px;
+}
+
+#dropdown-icon1 .estate-agent-dropdown{
+    text-decoration: none; 
+    margin-top: 12px; 
+    color: black !important; 
+    float: right;
+}
+
+.redirect-listing{
+    background-color: #ffffff;
+    border: .5px solid #8f8e8e;
+    border-radius: 1rem;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.listing-bar{
+    display: flex;
+    margin-top:1rem; height:60px; background-color: #ffffff; box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.desc-img{
+    width: 130px;
+    height: 90px;
+}
+
+.property-slider .item-card .card-img img,
+.for-slick-slider .item-card .card-img img{
+    width: 100% !important;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-img-icon{
+    color: #f7f7f7;
+    position: absolute;
+    left: 41.5%;
+    top: 52%;
+}
+
+.property-slider .item-card .card-text,
+.for-slick-slider .item-card .card-text{
+    height: 130px !important;
+    text-align: left;
+    padding: 2px 10px;
+}
+
+.item-title{
+   color: #0e0e0e;
+   font-size: 20px;
+   font-weight: 600;
+   font-family: roboto;
+   text-align: left;
+}
+
+.newsletter{
+    margin-top: 1rem;
+    background-color: #5e80ab; 
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.property-body-text .card-title:hover,
+.redirect-listing:hover,
+.item-title:hover{
+    color: #710f10;
+ }
+
+.item-address{
+    color: silver;
+    font-size: 16px;
+    font-family: roboto;
+    text-align: left;
+}
+
+.item-price{
+    color:  #5e80ab;
+    font-size: 20px;
+    font-family: roboto;
+    font-weight: 800;
+    text-align: left;
+}
+
+#middle-body .arrow-prev{
+    position: absolute;
+    left: 92%;
+    cursor: pointer;
+}
+
+#middle-body .arrow-next{
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+}
+
+#middle-body .arrow-prev:hover, #middle-body .arrow-next:hover{
+    opacity: 0.6;
+    transition: 0.2s;
+}
+.property-slider{
+    display: flex;
+}
+
+/* #edit-listing-drop{
+    border: 0; 
+    color: #5e80ab;
+} */
+
+#rent-dropdown,
+.custom-select-invirse{
+    color:#5e80ab; 
+    cursor: pointer; 
+    font-size: inherit; 
+    font-family: roboto; 
+    text-align: right; 
+    border: 0 !important;
+}
+
+.account-drop{
+    color: #fff;
+    background-color:#000 !important;
+    margin-right: 3rem;
+    border: 0;
+}
+
+.bg-n{
+    background-color:#ffffff !important; 
+    margin-top: 1.8rem;
+}
+
+.logo{
+    padding:0 0 0.6rem; 
+    margin:-2rem 0 -2rem 0.1rem; 
+    width: 185px; 
+    height: 95px;
+}
+
+.property .card-img,
+.estate-property-slider .card-img{
+    width: 1200px;
+    height: 260px;
+}
+
+.property-img .card-img{
+    width: 1200px;
+    height: 360px;
+}
+
+/* 
+#property-card-slider .prev, */
+#desc-prev,
+#p-prev, 
+#estate-arrow-prev{
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+/* #property-slider .p-arrow-next, #property-card-slider .next, */
+#desc-next,
+#p-next,
+#estate-arrow-next{
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.div-p-img-desc{
+    text-align: center;
+}
+
+.contact-d{
+    color: #7b96b9;
+}
+
+.contact-details{
+    color: rgb(98, 98, 173);
+}
+
+.btn-group-sm > .btn {
+    padding: 0.012rem 0.2rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+.social{
+    padding-top: 3.5rem;
+    color: #7b96b9;
+}
+
+.fa-heart{
+    background-color: #b3b3b4 !important;
+    border-radius: 50%;
+    color: #424242;
+    padding: 10px;
+ }
+
+.p-img-desc{
+    padding-top: 20px;
+}
+
+#desc-prev,
+#desc-next,
+.icon{
+    color: #b3b3b3;
+}
+
+#desc-prev:hover,
+#desc-next:hover,
+#p-prev:hover,
+#p-next:hover,
+#estate-arrow-prev:hover, 
+#estate-arrow-next:hover
+{
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#property-card-slider{
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+    max-width: 1200px; 
+    margin:.5rem 0 1rem 0;
+}
+
+#property-slider,
+#card-property{
+     box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+     margin-right: 4.4rem !important;
+}
+
+#property-desc{
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+#desc-property .icon,
+#property-desc .icon,
+#card-property .icon,
+#property-slider .icon,
+#property-card-slider .icon{
+    position: absolute;
+    left: 45%;
+    bottom: 6%;
+    cursor: pointer;
+}
+
+.property-body-text .card-title, .property-body-text .card-text{
+    text-align: left;
+}
+
+.card-margin .card-text{
+    color: rgb(139, 139, 139);
+}
+
+.card-margin .card-title{
+    font-weight: 600;
+    font-family: roboto;
+    font-size: 20px;
+    color: black;
+}
+
+.card-margin img{
+    width:50% !important;
+    margin: 0 auto 0 !important;
+}
+
+.card-margin .card-title:hover{
+    font-weight: 549;
+    color: rgb(41, 41, 41);
+}
+
+
+.property-body-text .card-text{
+    font-size: 12px;
+}
+
+.property-body-text .card-title{
+    font-size: 14px;
+}
+
+.property-body-text .text-muted{
+    text-align: left;
+}
+/*******STYLE FOR PROPERTY PAGE END HERE*******/
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration:none;
+    color: #5e80ab;
+    font-family: roboto;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+#dropdown-icon1 .dropdown-toggle::after,
+#dropdown-icon2 .dropdown-toggle::after,
+#dropdown-icon3 .dropdown-toggle::after{
+    display: none;
+}
+
+.dropdown > a{
+    color:#ffffff !important;
+}
+
+.dropdown > a:hover{
+    background-color: #5e80ab;
+    opacity: 0.6;
+}
+
+.account-header .dropdown > a:hover{
+    background-color: #5e80ab;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: roboto;
+}
+
+#rent-dropdown .dropdown-menu{
+    background-color: #ffffff;
+    min-width: auto !important;
+}
+
+#account .dropdown-menu{
+    background-color: #000000;
+    min-width: auto !important;
+}
+
+#rent-dropdown .dropdown-menu .dropdown-item{
+    color: #717375 !important;
+    font-weight: 600;
+    font-family: roboto;
+}
+
+#account .dropdown-menu .dropdown-item{
+    color: #ffffff !important;
+    font-weight: 600;
+    font-family: roboto;
+    border-top: 1px solid #ffffff;
+}
+
+#rent-dropdown .dropdown-menu > a:hover{
+    background-color: #d5d6d8 !important;
+    color: #717375 !important;
+}
+
+#account .dropdown-menu > a:hover{
+    background-color: #5e80ab !important;
+    color: #ffffff !important;
+}
+
+.dropdown > a:hover {
+    background-color: #ffffff;
+    color: #ffffff !important;
+}
+
+/* #rent-dropdown a:hover{
+    color: #710f10 !important;
+} */
+
+/* .navbar-nav .nav-item li a:hover{
+    background-color: #710f10 !important;
+} */
+
+#verticle-line{
+    padding-right: 0;
+    margin:0.18rem 1.8rem 0 0;
+	width:3px;
+	background-color:#a3a4a4;
+    height:20px;
+}
+
+#nav-verticle-line{
+    padding-right: 0;
+    margin:0.8rem 0 0 2rem;
+	width:3px;
+	background-color:#a3a4a4;
+    height:20px;
+}
+
+.flex-container{
+    background-color: rgba(0, 0, 0, 8) !important;
+    height: 30px;
+}
+
+.navbar-fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.ctx input::placeholder{ 
+    color: #ffffff;
+}
+
+.file-type input[type="file"]{
+    display:none;
+}
+
+
+
+.ctx input{
+    background-color: #5e80ab;
+    border: 0;
+}
+
+.ctx input:focus{
+    background-color: #5e80ab;
+    border: 0;
+    outline: none;
+}
+
+.dropdown .btn{
+    background-color:  #5e80ab;
+    border: 0;
+}
+
+.dropdown .btn:focus{
+    background-color:  transparent;
+    border: 0;
+}
+
+.dropdown-menu{
+    background-color: #5e80ab;
+    min-width: auto !important;
+}
+
+.dropdown-menu > a:hover{
+    background-color: #7b96b9 !important;
+}
+
+.dropdown-menu .dropdown-header{
+    color: #ffffff;
+    font-family: roboto;
+}
+
+.dropdown-menu .dropdown-item{
+    color: #ffffff !important;
+    font-family: roboto;
+}
+
+.dropdown > a{
+    color: silver;
+    text-decoration: none;
+}
+
+.list-in-navbar{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list-in-navbar ul li{
+    list-style-type: none;
+    float: left;
+}
+
+.list-in-navbar ul li, #property-header-nav .button-flex{
+   padding-right: 1.8rem;
+}
+
+#property .list-in-navbar ul li{
+    padding-right: 3.6rem;
+}
+
+#property-header-nav .img-flex{
+    padding-left: 4.4rem;
+}
+
+.list-in-navbar ul li a{
+    text-decoration: none;
+    color: silver;
+ }
+
+ .sign-up{
+     padding-right: 20px;
+ }
+
+#header-nav{
+    width: 100%;
+    height: 60px;
+    margin-top: 1.6rem;
+    background-color: #f8f9fa;
+}
+
+.col-img{
+    margin: 0 0 0 0.5%;
+}
+
+#sub-footer{
+    margin-top: 20rem;
+}
+
+#footer2 .img-flex img{
+    width: 185px;
+    height: 95px;
+    padding: 0 10px 0 10px;
+}
+
+#top-header-body{
+    background-image: url(image/top-header-image.jpg);
+    background-position: center;
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 6rem;
+}
+
+.top-header-body-h1{
+    color: #ffffff;
+    font-size: 3rem;
+    margin: 0 auto 0;
+    padding: 2.5rem 5rem 1.875rem 2.5625rem;
+}
+
+.search-form{
+    background-color: #3d6599;
+    border-radius: 6px 6px 6px 6px;
+    padding:15px 0px 0px 0px;
+}
+
+#top-body{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.top-body-link{ 
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.8rem 2rem 0 0;
+}
+
+.trusted-party{
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.trusted-party-img{
+    width: 84%;
+    height: 100px;
+    margin:0px 30px;
+}
+
+.trusted-party-img img{
+    width: 100%;
+    height: 90px;
+    padding: 10px 20px 10px 20px;
+}
+
+#middle-body{
+    background-color: #ffffff;
+    height: 32rem;
+    margin-top: 1.8rem;
+    width: 100%;
+}
+
+.top-body-right{ 
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.8rem 2rem 0 0;
+}
+
+.top-body-left{
+    color:#3d6599;
+    padding: 0.2rem 0 0 2.6rem;
+}
+
+.container{
+	width:100%;
+}
+
+#bottom-body{
+    background-color: #f2f2f2;
+    height: auto;
+    width: 100%;
+}
+
+.bottom-body-header1, .bottom-body-header2{
+    text-align: center;
+    font-family: roboto;
+    padding: 0 2rem 0 2rem;
+}
+
+.bottom-body-header1{
+    color:  #3d6599;
+    margin-top: 2rem;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.bottom-body-header2{
+    color:  #3d6599;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.customDiv h3, p{
+    color: #3d6599;
+    text-align: center;
+    font-family: roboto;
+}
+
+.customDiv h3{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 10px 20px 10px 20px;
+}
+
+.customDiv p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: -20px 20px 20px 20px;
+}
+
+.home-fontawesome, .list-fontawesome{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.list-fontawesome .fa, .home-fontawesome .fa{
+    color: #ffffff;
+    background-color: #3d6599;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+.customDiv-button{
+    background-color: #3d6599; 
+    border: #3d6599;
+    color: #ffffff;
+    text-align: center;
+    margin: 1.8rem auto 0;
+}
+
+.customDiv .btn-block {
+    width: 50% !important;
+}
+.drop .dropdown > a{
+    color: #5e80ab !important; 
+    font-weight: 800; 
+    font-family: roboto;
+}
+
+.customDiv-button:hover{
+    background-color: #3d6599;
+    opacity: 0.8;
+}
+
+.news-header{
+    padding:0 2rem 0 2rem; 
+    color: #a3a4a4 !important; 
+    font-family: roboto;
+}
+
+.subscrip-link{
+    background-color: #5e80ab;
+    border: #5e80ab; 
+    color: #fff;
+}
+
+.subscrip-link:hover,
+.subscrip-link:focus{
+    background-color: #7f94ad;
+    border: #7f94ad; 
+    transition: 2s ease;
+}
+
+#footer{
+    background-color: #f6f6f6;
+    color: #3d6599;
+    height: auto;
+    padding: 36px;
+    width: 100%;
+}
+
+#footer-main-links > a{
+	display: block;
+	padding: 3px;
+	font-size: 14px;
+    color: #3d6599;
+    opacity: 0.8;
+}
+
+#footer-main-links > a{
+    text-decoration: none;
+	list-style: none;
+}
+
+#footer-main-links > a:hover{
+    text-decoration: underline;
+}
+
+.footer-link-header{
+    color:  #5e80ab;
+    font-size: 20px;
+    font-family: roboto;
+    font-weight: 800;
+}
+
+.footer-text-center > p{
+    color: #3d6599;
+    font-family: roboto;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 1rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.lms-head{
+   padding-top: -8rem !important;
+}
+
+.gotopbtn{
+    position: fixed;
+    display: none;
+	width: 50px;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.236);
+	bottom: 15px;
+	right: 15px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 45px;
+	font-size: 14px;
+	border-radius: 50%;
+
+}
+
+.gotopbtn .fa{
+    color: #ffffff;
+}
+
+.gotopbtn:hover .fa{
+    font-size: 18px;
+    transition: 0.2s;
+    opacity: 0.6;
+}
+
+
+/**************styles for list of lodge start here*********/
+
+#header-nav2{
+    width: 100%;
+    height: 60px;
+    background-color: #3d6599;
+}
+
+.header-nav2-form{
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -o-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+}
+
+.header-nav2-form{
+    padding: 0.6rem 4.5rem 0 4.5rem;
+}
+
+#footer2{
+    background-color: #ffffff;
+    color: #3d6599;
+    height: auto;
+    padding: 36px;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.apply-margin{
+    margin-right: 3rem !important;
+}
+
+.agent-h1{
+    color: #606a7a;
+    font-family: roboto; 
+    font-size: 1.4rem; 
+    font-weight: 800; 
+    padding: 1.4rem 0 1.4rem 2.8rem;
+    margin-bottom: -29px !important;
+}
+
+.float-left{
+    float: left;
+}
+
+.container-give-margin{
+    margin: 29px !important;
+}
+
+.signup-head-section{
+    background-image: linear-gradient(#ededed, #f7f7f7, #ffffff);
+}
+
+.forgot-password{
+    color:#3d6599 !important; 
+    text-align: center; 
+    padding: 0 0 10px;
+}
+
+.header-navbar{
+    background-color:#ffffff !important; 
+    margin-top: 1.8rem;
+}
+
+.img-header-brand{
+    padding:0 0 0.6rem; 
+    margin:-2rem 0 -2rem 0.1rem; 
+    width: 185px; 
+    height: 95px;
+}
+
+.clip-path{
+    clip-path: polygon(27% 0, 100% 0, 100% 100%, 2% 100%, 4% 71%, 6% 55%, 10% 36%, 17% 19%);
+}
+
+.add-flex{
+    border:1px solid #5e80ab;
+    border-top:5px solid #5e80ab;
+    border-radius: .2rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.drop-property-rent{
+    color: #5e80ab !important; 
+    font-weight: 800; 
+    font-family: roboto;
+}
+
+.news-item{
+    padding:0 2rem 0 2rem; 
+    color: #a3a4a4 !important; 
+    font-family: roboto;
+}
+
+.list-property-btn{
+    background-color: #5e80ab; 
+    border: #5e80ab; 
+    color: #ffffff !important;
+}
+
+.estate-agent-con{
+    padding-left: 15%;
+    padding-right: 20px;
+}
+
+.estate-agent-text{
+    font-size: 16px;
+}
+
+.property-h1{
+    color: #606a7a;
+    font-family: roboto; 
+    font-size: 1.4rem; 
+    font-weight: 800; 
+    margin: 0 0 0 2.7rem;
+    padding-top: 5px;
+}
+
+.property-h{
+    color: #5e80ab; 
+    font-family: roboto; 
+    font-size: 1.4rem; 
+    font-weight: 800; 
+    margin: 1.4rem 0 1.4rem 2.5rem;
+}
+
+
+.card-margin1{
+    padding-top: 0 !important;
+}
+
+.card-margin2{
+    padding-top: 20px !important;
+}
+
+#styling-the-card, .card{
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*****FOR RENT STYLE*****/
+.btn-rent-alert{
+    float: right; 
+    border: 1px solid #5e80ab; 
+    color: #5e80ab; 
+    margin-top: 1rem;
+}
+
+.btn-rent-alert:hover,
+.btn-rent-alert:focus{
+    background-color: #5e80ab; 
+    color: #fff; 
+    border: 1px solid #5e80ab;
+}
+
+.tooltip{
+    border-radius: 30px;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-left .arrow::before {
+  border-color:#5e80ab;
+}
+
+/***@MEDIA QUERY SCREEN SIZES HERE***/
+@media screen and (min-width:320px) and (max-width:780px){
+    #footer2 .img-flex img{
+         width: 185px;
+         height: 95px;
+         margin: -0.8rem 0 0 -1rem;
+     }
+ 
+     .card-margin1{
+         padding-top: 20px !important;
+     }
+ 
+     .card-margin2{
+         padding-top: 20px !important;
+     }
+ 
+     .card-margin{
+         margin-top: 20px !important;
+     }
+ 
+     .property-slider1 .card-img, .property-slider2 .card-img{
+         width: 360px;
+         height: 200px;
+     }
+     
+     .estate-price{
+         float: left;
+     }
+
+     div.desc-icon{
+        float: right;
+     }
+
+     .property-body-text .text-muted,
+     .property-body-text .card-text{
+         margin-top: 1rem;
+     }
+ 
+     .text-center .card-text,
+     .text-center .card-img{
+         margin-top: 1rem;
+     }
+ 
+     .margin-for-button{
+         margin-top: 20px !important;
+     }
+ 
+     .margin-for-button1{
+         margin-bottom: 20px !important;
+     }
+ 
+    #dropdown-icon1 .dropdown-toggle::after,
+    #dropdown-icon2 .dropdown-toggle::after,
+    #dropdown-icon3 .dropdown-toggle::after{
+        display: inline-block;
+        float: right;
+        margin-top: 0.6rem;
+    }
+}
+@media screen and (min-width:1920px) and (max-width: 4050px){
+    #dropdown-icon1 .dropdown-toggle::after,
+    #dropdown-icon2 .dropdown-toggle::after,
+    #dropdown-icon3 .dropdown-toggle::after{
+        display: inline-block;
+        float: right;
+        margin-top: 0.6rem;
+    }
+
+    .col-xl-12{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.6rem;
+    }
+}
+
+@media screen and (min-width:1600px) and (max-width: 1920px){
+    #dropdown-icon1 .dropdown-toggle::after,
+    #dropdown-icon2 .dropdown-toggle::after,
+    #dropdown-icon3 .dropdown-toggle::after{
+        display: inline-block;
+        float: right;
+        margin-top: 0.6rem;
+    }
+
+    .col-xl-12{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.6rem;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    #dropdown-icon1 .dropdown-toggle::after,
+    #dropdown-icon2 .dropdown-toggle::after,
+    #dropdown-icon3 .dropdown-toggle::after{
+        display: inline-block;
+        float: right;
+        margin-top: 0.6rem;
+    }
+
+    .col-xl-12{
+        position: relative;
+        width: 100% !important;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.6rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -1.2rem 0 0 -3rem;
+    }
+
+    #middle-body .arrow-prev{
+        left: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.6rem;
+    }
+
+
+    #middle-body .arrow-prev{
+        left: 88%;
+    }
+
+    #nav-verticle-line{
+        display: none;
+    }
+
+    .navbar-toggler{
+        margin-right: 1.8rem;
+    }
+
+    .nav-link{
+        margin-left: 2rem !important;
+    }
+
+    .news-item .nav-link{
+        padding-left: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    /* .estate-agent-text{
+        padding-left: 2rem;
+    } */
+    
+    .property-dropdown {
+        margin-top: -2rem !important;
+    }
+    
+    .estate-agent-img{
+        margin: 2rem auto 2rem 2rem;
+    }
+
+    .estate-agent-img1{
+        margin: 0;
+    }
+
+
+    .col-gap{
+        margin-bottom: 1rem;
+    }
+
+    #middle-body .arrow-prev{
+        left: 84%;
+    }
+
+    #nav-verticle-line{
+        display: none;
+    }
+
+    .nav-link{
+        float: left;
+    }
+
+    .news-item .nav-link{
+        margin-left: -2rem !important;
+    }
+
+    .sign-up{
+        margin-right: 1.2rem;
+    }
+
+    .navbar-toggler{
+        margin-right: 1.8rem;
+    }
+
+    .property-h1{
+        color: #606a7a; 
+        font-family: roboto; 
+        font-size: 26px; 
+        font-weight: 800;
+        margin: 1.4rem 0 1.4rem 4.5rem;
+    }
+
+    .list-in-navbar .sign-up{
+        padding-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .estate-agent-text{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #footer2 .img-flex img{
+        width: 185px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.8rem;
+    }
+
+    #middle-body .arrow-prev{
+        left: 82%;
+    }
+
+    
+}
+
+@media screen and (max-width: 640px){
+    /* .estate-agent-dropdown{
+        margin-top: -2.2rem !important;
+    } */
+
+    #middle-body .arrow-prev{
+        left: 78%;
+    }
+
+    .estate-property-slider .card-img{
+        width: 1200px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .listing-count{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #middle-body .arrow-prev{
+        left: 72%;
+    }
+
+    .estate-agent-img1{
+        margin: 0rem 0rem 1rem 8.5rem;
+    }
+
+    .estate-agent-text{
+        padding-left: 3rem;
+    }
+
+    .text-count{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .top-header-body-h1{
+        font-size: 2rem;
+    }
+
+    .text-count{
+        display: none;
+    }
+
+    #middle-body .arrow-prev{
+        left: 62%;
+    }
+
+    .estate-agent-img1{
+        margin: 0rem 0rem .5rem 3rem;
+    }
+
+    .estate-agent-text{
+        padding-left: 0;
+    }
+}

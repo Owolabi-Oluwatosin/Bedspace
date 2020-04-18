@@ -1,0 +1,282 @@
+.card-footer div label input[type="file"]{
+	display:none;
+}
+
+.card-footer div{
+    float: right;
+    margin-right: .25rem;
+} 
+
+.card-footer div label span{
+	position:relative;
+    display:inline-block;
+    background-color: #5e80ab;
+	border:1px solid #5e80ab;
+	padding:3px 10px;
+	color:#ffffff;
+	border-radius:.2rem;
+	font-size:15px;
+	transition:0.5s;
+    user-select:none;
+    cursor: pointer;
+}
+
+/***STYLING FOR DROPZONE IN THE LISTING PROPERTY***/
+.dropzone{
+	width:200px;
+	height:200px;
+	border:2px dashed #ccc;
+	border-radius:3px;
+	color:#ccc;
+	line-height:200px;
+    text-align:center;
+    cursor: pointer;
+}
+
+.dropzone.dragover{
+	border:2px dashed #5e80ab;
+	color: #5e80ab;
+}
+
+.dropzone label{
+    cursor: pointer;
+}
+
+.dropzone input[type="file"]{
+    display:none;
+}
+/***STYLING FOR DROPZONE IN THE LISTING PROPERTY END***/
+
+/***@MEDIA QUERY SCREEN SIZES HERE***/
+@media screen and (min-width:320px) and (max-width:780px){
+    #footer2 .img-flex img{
+         width: 185px;
+         height: 95px;
+         margin: -0.8rem 0 0 -1rem;
+     }
+ 
+     .card-margin1{
+         padding-top: 20px !important;
+     }
+ 
+     .card-margin2{
+         padding-top: 20px !important;
+     }
+ 
+     .card-margin{
+         margin-top: 20px !important;
+     }
+ 
+     .property-body-text .text-muted,
+     .property-body-text .card-text{
+         margin-top: 1rem;
+     }
+ 
+     .text-center .card-text,
+     .text-center .card-img{
+         margin-top: 1rem;
+     }
+ 
+     .margin-for-button{
+         margin-top: 20px !important;
+     }
+ 
+     .margin-for-button1{
+         margin-bottom: 20px !important;
+     }
+}
+@media screen and (min-width:1920px) and (max-width: 4050px){
+
+    .col-xl-12{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.6rem;
+    }
+}
+
+@media screen and (min-width:1600px) and (max-width: 1920px){
+
+    .col-xl-12{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.6rem;
+    }
+}
+
+@media screen and (max-width: 1600px){
+
+    .col-xl-12{
+        position: relative;
+        width: 100% !important;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.6rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -1.2rem 0 0 -3rem;
+    }
+
+    #middle-body .arrow-prev{
+        left: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #footer2 .img-flex img{
+        width: 195px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.6rem;
+    }
+
+
+    #middle-body .arrow-prev{
+        left: 88%;
+    }
+
+    #nav-verticle-line{
+        display: none;
+    }
+
+    .navbar-toggler{
+        margin-right: 1.8rem;
+    }
+
+    .nav-link{
+        margin-left: 2rem !important;
+    }
+
+    .news-item .nav-link{
+        padding-left: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .estate-agent-text{
+        padding-left: 2rem;
+    }
+    
+    .property-dropdown,
+    .estate-agent-dropdown {
+        margin-top: -2rem !important;
+    }
+    
+    .estate-agent-img{
+        margin: 2rem auto 2rem 2rem !important;
+    }
+
+
+    .col-gap{
+        margin-bottom: 1rem;
+    }
+
+    #middle-body .arrow-prev{
+        left: 84%;
+    }
+
+    #nav-verticle-line{
+        display: none;
+    }
+
+    .nav-link{
+        float: left;
+    }
+
+    .news-item .nav-link{
+        margin-left: -2rem !important;
+    }
+
+    .sign-up{
+        margin-right: 1.2rem;
+    }
+
+    .navbar-toggler{
+        margin-right: 1.8rem;
+    }
+
+    /* .navbar-brand{
+        margin-left: -1.6rem;
+    } */
+
+    .list-in-navbar .sign-up{
+        padding-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #footer2 .img-flex img{
+        width: 185px;
+        height: 95px;
+        margin: -0.8rem 0 0 -2.8rem;
+    }
+
+    #middle-body .arrow-prev{
+        left: 82%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .estate-agent-dropdown{
+        margin-top: -2.2rem !important;
+    }
+
+    #middle-body .arrow-prev{
+        left: 78%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    #middle-body .arrow-prev{
+        left: 72%;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .top-header-body-h1{
+        font-size: 2rem;
+    }
+
+    .estate-agent-dropdown{
+        margin-top: 10px !important;
+    }
+
+    .text-count{
+        display: none;
+    }
+
+    
+    /* .estate-agent-card{
+        max-width: 12rem;
+    } */
+
+    #middle-body .arrow-prev{
+        left: 62%;
+    }
+}

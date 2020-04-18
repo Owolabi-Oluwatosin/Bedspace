@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHostel</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link href="font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="edit-listing.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#ffffff !important; margin-top: 0; box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);">
+        <a class="navbar-brand" href="index.html"><img src="image/bedspace_trans.png" alt="Company Logo" style="padding:0 0 0.6rem; margin:-2rem 0 -2rem 0.1rem; width: 185px; height: 95px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="padding-right: 1.6rem;">
+        <select name="rent" style="border: 0; color: #5e80ab;">
+            <option value="">To Rent</option>
+            <option value="flats">Flats</option>
+            <option value="Self Contain">Self Contain</option>
+            <option value="Rooms">Rooms</option>
+            <option value="Boys Quarters">Boys Quarters</option>
+        </select>
+        <ul class="navbar-nav">
+            <li id="nav-verticle-line"></li>
+            <li class="nav-item news-item" style="padding:0 2rem 0 2rem; color: #a3a4a4 !important; font-family: roboto;">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="listing-category.html"><button type="button" class="btn btn-primary btn-block btn-sm" style="background-color: #5e80ab; border: #5e80ab; color: #ffffff !important;">List your Property</button></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container-sm" style=" background-color: #ffffff; margin-top: 0.5px; padding:20px 30px 10px 30px; position: relative; z-index: 1;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="listing-header">
+                    <h1>Edit Listing</h1>
+                    <p style="background-color: #f5f5f5; text-align: left; color: #c9c9c9; border-radius: 5px; padding: 5px;"><a href=""> My Property</a> / Edit Listing</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="text-content" >
+                    <p style="text-align: left; color: #333333;"><strong>Listing Quality: </strong>Good quality listings are shown higher in search results and get more leads. Complete as many fields as possible and add high resolution pictures for a higher ranking. Boost your rank further by promoting the listing with silver or gold priority. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 40%; min-width: 20px; background-color: #5e80ab;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        40%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style=" margin-top: 1rem;">
+            <div class="col-md-12">
+                <form action="" method="">
+                    <div class="card text-black mb-3" style="border:1px solid #5e80ab;">
+                        <div class="card-header text-white mb-3" style="background-color: #5e80ab;">
+                            Step 3 - Media
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-primary" style="margin-top: -1.6rem;" role="alert">
+                                Adding price/picture gives 10x more leads. Also note listings with a price/image will be listed above those without.
+                            </div>
+                            <div class="dropzone" id="dropzone">
+                                <label for="fileInput" id="fileLabel">Drop Image Here </label>
+                                <input type="file" name="files[]" id="fileInput" multiple class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                            <div id="uploads"></div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.youtube.com" type="button" class="btn btn-secondary btn-sm" style="float: right; background-color: #5e80ab; border:1px solid #5e80ab; margin-left: 2.5px;"><i class="fab fa-youtube" aria-hidden="true"></i> Add YouTube Video</a>
+                            <div>
+                                <label>
+                                    <input type="file" name="">
+                                    <span><i class="fa fa-image" aria-hidden="true"></i> Add Pictures</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 2rem;">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-danger btn-sm" style="float: left;">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm" style="float: right; background-color: #5e80ab; border:1px solid #5e80ab;border-top-left-radius: 0px; border-bottom-left-radius: 0px;"> Next <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                            <button type="submit" class="btn btn-outline-secondary btn-sm" style="float: right; background-color: #ffffff; border:1px solid #5e80ab; border-top-right-radius: 0px; border-bottom-right-radius: 0px;"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jQuery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

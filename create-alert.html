@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Alert</title>
+    <link href="font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="all-styles.css">
+</head>
+<body>
+      <nav class="navbar-fixed flex-container"><!-- THIS CHANGE TO THIS NAV APPLY TO ALL THE PAGE THAT HAVE THIS BLACK NAV-->
+        <div class="list-in-navbar account-header">
+          <select name="rent" class="account-drop">
+            <option value="">My Account</option>
+            <option value="flats">Request <small id="option-b">0</small></option>
+            <option value="Self Contain">My Property</option>
+            <option value="Rooms">Profile</option>
+            <option value="Boys Quarters">Account Setting</option>
+            <option value="Boys Quarters">Sign Out</option>
+          </select>
+        </div>
+      </nav>
+    <!-- <nav class="navbar-fixed flex-container"> THIS CHANGE TO THIS NAV APPLY TO ALL THE PAGE THAT HAVE THIS BLACK NAV
+        <div class="list-in-navbar account-header">
+          <ul>
+              <li class="dropdown" id="account">
+                  <a class="nav-link dropdown-toggle" style="padding-top: 0;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    My Account
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="myproperties.html">My Property</a>
+                    <a class="dropdown-item" href="myproperties.html">Profile</a>
+                    <a class="dropdown-item" href="account.html">Account Setting</a>
+                    <a class="dropdown-item" href="index.html">Sign Out</a>
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#ffffff !important; margin-top: 1.8rem;">
+        <a class="navbar-brand" href="index.html">
+            <img src="image/bedspace_trans.png" alt="Company Logo" style="padding:0 0 0.6rem; margin:-2rem 0 -2rem 0.1rem; width: 185px; height: 98px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="padding-right: 1.6rem;">
+          <ul class="navbar-nav drop">
+            <select name="rent" class="custom-select-invirse">
+              <option value="">To Rent</option>
+              <option value="flats">Flats</option>
+              <option value="Self Contain">Self Contain</option>
+              <option value="Rooms">Rooms</option>
+              <option value="Boys Quarters">Boys Quarters</option>
+            </select>
+            <li id="nav-verticle-line"></li>
+            <li class="nav-item news-item news-header">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="listing-category.html">
+                    <button type="button" class="btn btn-primary btn-block btn-sm subscrip-link">List a Property</button>
+                </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="account-head-section">
+          <h1 class="property-h1">My Account Settings</h1>
+      </div>
+      <div class="row">
+            <div class="col-md-4 style-sub">
+                <div class="card text-left" id="styling-the-card">
+                    <div class="card-header">
+                        Push Notification
+                    </div>
+                    <div class="card-body">
+                        No subscription found
+                    </div>
+                </div>
+            </div>
+      </div>
+      <section id="footer2">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-img">
+                  <div class="img-flex">
+                    <a href="index.html"><img src="image/bedspace_trans.png" alt="LOGO"></a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+                  <h3 class="footer-link-header">Properties</h3>
+                  <a href="#">Property for Rent</a>
+                  <a href="#">Estate Agents</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+                  <h3 class="footer-link-header">Private Property</h3>
+                  <a href="#">About Us</a>
+                  <a href="#">Contact Us</a>
+                  <a href="#">Terms & Privacy</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3" id="footer-main-links">
+                  <h3 class="footer-link-header">Services</h3>
+                  <a href="#">Advertisement</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />   
+          <div class="row">	
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="lms-head">
+                    <div class="footer-text-center">
+                        <p> Head Office <i class="fa fa-phone" aria-hidden="true"></i> +2348170942931</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="lms-area">
+                    <div class="footer-text-center">
+                      <p>  16a Fola Jinadu Crescent,, Gbagada Phase 2, Gbagada</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="lms-holding">
+                    <div class="footer-text-center">
+                      <p>House Property Nigeria  &copy; 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>	
+        </section>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <a href="#" class="gotopbtn"><i class="fa fa-arrow-up"></i></a>
+        </div>
+    <script type="text/javascript" src="js/jQuery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
